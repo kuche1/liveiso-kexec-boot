@@ -26,7 +26,11 @@ cp -r /usr/share/archiso/configs/baseline "$ARCHLIVE"
 
 # remove unneeded packages
 
-# TODO
+sed -i -z 's%\nvirtualbox-guest-utils-nox\n%\n%' "$PACKAGES"
+sed -i -z 's%\nqemu-guest-agent\n%\n%' "$PACKAGES"
+sed -i -z 's%\nopen-vm-tools\n%\n%' "$PACKAGES"
+sed -i -z 's%\nopenssh\n%\n%' "$PACKAGES"
+sed -i -z 's%\nhyperv\n%\n%' "$PACKAGES"
 
 # add repo
 
@@ -55,7 +59,10 @@ kexec-tools
 
 # zfs dependencies
 linux-headers
-clonezilla # for some reason `zfs satus` doesn't work and modprobe of zfs also doesn't work; it's probably 1 of the packages this depends on
+
+clonezilla
+# for some reason "zfs satus" doesn't work without this and modprobe of zfs also doesn't work; it's probably 1 of the packages this depends on this
+
 # zfs
 zfs-dkms
 
