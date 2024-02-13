@@ -1,2 +1,4 @@
 
 make the .service file into it's own separate file rather than generating it in bash
+
+see if we can remove any of the other packages
