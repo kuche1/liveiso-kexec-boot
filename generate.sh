@@ -49,11 +49,6 @@ cp -r /usr/share/archiso/configs/baseline "$ARCHLIVE"
 (cat << EOF
 
 # we need one of these for the zfs dkms to work
-alsa-utils
-amd-ucode
-arch-install-scripts
-archinstall
-b43-fwcutter
 base
 bcachefs-tools
 bind
