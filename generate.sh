@@ -34,6 +34,14 @@ sed -i -z 's%\nhyperv\n%\n%' "$PACKAGES"
 
 # add repo
 
+# https://github.com/archzfs/archzfs/wiki
+#
+# you will also need to add the repo on the host PC
+# and you will need to trust the keys
+#
+# pacman-key -r DDF7DB817396A49B2A2723F7403BD972F75D9D76
+# pacman-key --lsign-key DDF7DB817396A49B2A2723F7403BD972F75D9D76
+
 {
 	echo '[archzfs]'
 	echo '# Origin Server - Finland'
