@@ -64,23 +64,6 @@ btrfs-progs
 clonezilla
 cloud-init
 cryptsetup
-darkhttpd
-ddrescue
-dhclient
-dhcpcd
-diffutils
-dmidecode
-dmraid
-dnsmasq
-dosfstools
-e2fsprogs
-edk2-shell
-efibootmgr
-espeakup
-ethtool
-exfatprogs
-f2fs-tools
-fatresize
 
 # the important stuff
 kexec-tools
