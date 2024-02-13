@@ -49,7 +49,6 @@ cp -r /usr/share/archiso/configs/baseline "$ARCHLIVE"
 (cat << EOF
 
 # we need one of these for the zfs dkms to work
-base
 bcachefs-tools
 bind
 bolt
