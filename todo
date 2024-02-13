@@ -1,0 +1,2 @@
+
+make the .service file into it's own separate file rather than generating it in bash
