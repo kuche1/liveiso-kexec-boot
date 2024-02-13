@@ -55,8 +55,9 @@ clonezilla
 # kexec
 kexec-tools
 
-# zfs
+# zfs dependencies
 linux-headers
+# zfs
 zfs-dkms
 
 EOF
