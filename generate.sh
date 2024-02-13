@@ -81,37 +81,6 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
-foot-terminfo
-fsarchiver
-gnu-netcat
-gpart
-gpm
-gptfdisk
-grml-zsh-config
-grub
-hdparm
-hyperv
-intel-ucode
-irssi
-iw
-iwd
-jfsutils
-kitty-terminfo
-less
-lftp
-libfido2
-libusb-compat
-linux
-linux-atm
-linux-firmware
-linux-firmware-marvell
-livecd-sounds
-lsscsi
-lvm2
-lynx
-man-db
-man-pages
-mc
 
 # the important stuff
 kexec-tools
