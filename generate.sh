@@ -48,15 +48,12 @@ cp -r /usr/share/archiso/configs/baseline "$ARCHLIVE"
 # } >> "$PACKAGES"
 (cat << EOF
 
-# we need one of these for the zfs dkms to work
-btrfs-progs
-clonezilla
-
 # kexec
 kexec-tools
 
 # zfs dependencies
 linux-headers
+clonezilla # for some reason `zfs satus` doesn't work and modprobe of zfs also doesn't work; it's probably 1 of the packages this depends on
 # zfs
 zfs-dkms
 
