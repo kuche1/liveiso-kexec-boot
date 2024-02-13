@@ -49,18 +49,13 @@ cp -r /usr/share/archiso/configs/baseline "$ARCHLIVE"
 (cat << EOF
 
 # we need one of these for the zfs dkms to work
-bcachefs-tools
-bind
-bolt
-brltty
-broadcom-wl
 btrfs-progs
 clonezilla
-cloud-init
-cryptsetup
 
-# the important stuff
+# kexec
 kexec-tools
+
+# zfs
 linux-headers
 zfs-dkms
 
