@@ -19,10 +19,16 @@ SERVICES_DIR="$ARCHLIVE/airootfs/$SYSTEMD_SERVICES_DIR"
 SERVICES_ENABLED_DIR="$ARCHLIVE/airootfs/etc/systemd/system/multi-user.target.wants"
 SERVICE_NAME="boot-into-other-os-using-kexec"
 
-# main
+# copy preset
 
 rm -rf "$ARCHLIVE"
 cp -r /usr/share/archiso/configs/baseline "$ARCHLIVE"
+
+# remove unneeded packages
+
+# TODO
+
+# add repo
 
 {
 	echo '[archzfs]'
@@ -40,12 +46,8 @@ cp -r /usr/share/archiso/configs/baseline "$ARCHLIVE"
 	echo 'Server = https://zxcvfdsa.com/archzfs/$repo/$arch'
 } >> "$PACMAN"
 
-# {
-# 	#echo squashfs-tools
-# 	echo kexec-tools
-# 	echo linux-headers
-# 	echo zfs-dkms
-# } >> "$PACKAGES"
+# add packages
+
 (cat << EOF
 
 # kexec
